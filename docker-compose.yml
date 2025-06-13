@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./logs:/app/logs
+      - ./data:/app/data
+    environment:
+      - GOOGLE_API_KEY=${GOOGLE_API_KEY}
+      - APP_HOST=0.0.0.0
+      - APP_PORT=8004
+      - APP_DEBUG=true
+      - LLM_MODEL=gemini-2.0-flash
+      - EMBEDDING_MODEL=models/embedding-001
+      - HMIS_API_URL=${HMIS_API_URL}
+      - HMIS_API_KEY=${HMIS_API_KEY}
+      - HMIS_API_ENABLED=${HMIS_API_ENABLED}
+    restart: unless-stopped 

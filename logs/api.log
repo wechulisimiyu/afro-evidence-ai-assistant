@@ -1,0 +1,13 @@
+2025-06-12 14:42:44 | INFO     | __main__:main:63 - Starting Medical Research and Clinical Analysis System
+2025-06-12 14:42:44 | INFO     | __main__:main:64 - Server: localhost:8004
+2025-06-12 14:42:44 | INFO     | __main__:main:65 - HMIS API: Disabled
+2025-06-12 14:42:44 | INFO     | __main__:main:68 - Rate limits: 60 requests/minute, 1000000 tokens/minute
+2025-06-12 14:42:44 | INFO     | __main__:check_dependencies:42 - Added C:\Users\Administrator\Desktop\Clutch\agentic_ai to Python path
+2025-06-12 14:44:57 | INFO     | vector_tools:_load_stores:20 - Guidelines vector store received successfully
+2025-06-12 14:44:57 | INFO     | vector_tools:_load_stores:27 - Journals vector store received successfully
+2025-06-12 14:48:26 | INFO     | vector_tools:_load_stores:20 - Guidelines vector store received successfully
+2025-06-12 14:48:26 | INFO     | vector_tools:_load_stores:27 - Journals vector store received successfully
+2025-06-12 14:49:39 | INFO     | vector_tools:_load_stores:20 - Guidelines vector store received successfully
+2025-06-12 14:49:39 | INFO     | vector_tools:_load_stores:27 - Journals vector store received successfully
+2025-06-12 14:55:34 | INFO     | vector_tools:_load_stores:20 - Guidelines vector store received successfully
+2025-06-12 14:55:34 | INFO     | vector_tools:_load_stores:27 - Journals vector store received successfully
