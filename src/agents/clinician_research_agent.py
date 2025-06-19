@@ -2,11 +2,11 @@
 Clinician research agent for research-based clinical analysis.
 """
 from langgraph.graph import StateGraph, END
-from config import (
+from src.config import (
     model, MAX_OUTPUT_TOKENS, MAX_INPUT_TOKENS,
     REQUESTS_PER_MINUTE, TOKENS_PER_MINUTE
 )
-from vector_tools import VectorStoreManager
+from src.vector_tools import VectorStoreManager
 from loguru import logger
 from typing import TypedDict, List, Dict, Any, Optional
 import json
@@ -204,4 +204,4 @@ Remember: Respond with ONLY the JSON object, no other text or explanation."""
         }
         graph = self.create_workflow()
         result = await graph.ainvoke(initial_state)
-        return result["report"] 
+        return result["report"]

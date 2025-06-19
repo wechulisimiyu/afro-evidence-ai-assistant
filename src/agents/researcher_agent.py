@@ -2,11 +2,11 @@
 Researcher agent for medical research and literature analysis.
 """
 from langgraph.graph import StateGraph, END
-from config import (
+from src.config import (
     model, MAX_OUTPUT_TOKENS, HMIS_API_KEY, 
     HMIS_API_ENABLED, HMIS_API_URL
 )
-from vector_tools import VectorStoreManager
+from src.vector_tools import VectorStoreManager
 import pandas as pd
 from loguru import logger
 from typing import TypedDict, List, Dict, Any, Optional

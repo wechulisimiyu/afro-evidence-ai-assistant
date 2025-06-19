@@ -1,9 +1,8 @@
-
 """
 Vector store utilities for the Medical RAG system.
 """
 from typing import List, Dict, Optional
-from config import embeddings, guidelines_store, journals_store
+from src.config import embeddings, guidelines_store, journals_store
 import google.generativeai as genai
 from loguru import logger
 

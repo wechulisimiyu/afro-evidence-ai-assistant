@@ -2,21 +2,20 @@
 Clinician agent for medical diagnosis and treatment recommendations.
 """
 from langgraph.graph import StateGraph, END
-from config import (
+from src.config import (
     model,
     MAX_OUTPUT_TOKENS,
     HMIS_API_URL,
     HMIS_API_KEY,
     HMIS_API_ENABLED
 )
-from vector_tools import VectorStoreManager
+from src.vector_tools import VectorStoreManager
+from src.get_hmis_tool import RelatedCasesManager
 from loguru import logger
 from typing import TypedDict, List, Dict, Any, Optional
 import aiohttp
 import json
 import numpy as np
-from vector_tools import VectorStoreManager
-from get_hmis_tool import RelatedCasesManager
 
 class NumpyEncoder(json.JSONEncoder):
     """Custom JSON encoder for numpy types."""

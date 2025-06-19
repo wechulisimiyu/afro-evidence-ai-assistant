@@ -1,6 +1,6 @@
 from typing import Dict, Any, List, Optional
-from vector_tools import VectorStoreManager
-from config import (
+from src.vector_tools import VectorStoreManager
+from src.config import (
     HMIS_API_URL,
     HMIS_API_KEY,
     HMIS_API_ENABLED
@@ -96,4 +96,4 @@ class RelatedCasesManager:
             
         except Exception as e:
             logger.error(f"Error getting related cases: {str(e)}")
-            return [] 
+            return []
